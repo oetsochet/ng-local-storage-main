@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <a  routerLink="/show-list" class="btn btn-primary mt-3" >Show list</a>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-6">
+      <div class="form-group">
+        <label >Name</label>
+        <input [(ngModel)]="objProduct.name" type="text" class="form-control">
+      </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="exampleInputPassword1">Qty</label>
+      <input [(ngModel)]="objProduct.qty" type="number" class="form-control" >
+    </div>
+  </div>
+  <div class="col-md-12 mb-3">
+    <div class="form-group">
+      <label for="exampleInputPassword1">Price</label>
+      <input [(ngModel)]="objProduct.price" type="number" class="form-control" id="exampleInputPassword1">
+    </div>
+    <button type="button" (click)="onUpdate()" class="btn btn-danger ml-3">Update</button>
+  </div>
+  
+  </div>
+</div>
